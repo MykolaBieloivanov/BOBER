@@ -1,0 +1,47 @@
+/* создайте галерию карточек по вкусу с персонажами / предметами - с тем, что захотите
+
+используйте grid для разметки контейнера родителя. сделайте карточку адаптивной с минимальным размером по ширине 300px - используйте minmax()
+
+на карточке должно быть название, картинка, описание
+
+используйте flex для разметки внутри карточки
+
+добавьте header, под который при скроле будут прятаться карточки (вспомните свойство position) */
+* {
+  box-sizing: border-box;
+}
+.bosscontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 50px 20px;
+  grid-auto-rows: auto;
+}
+.suncontainer {
+  display: flex;
+  background-color: rgb(209, 202, 161);
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+header {
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+  background-color: rgb(19, 224, 231);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100px;
+  height: 80px;
+}
+body {
+  margin: 0px;
+}
+p {
+    text-shadow: 0px 5px 10px red;
+}
