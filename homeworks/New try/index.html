@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обратный таймер</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/scrypt.js"></script>
+  </head>
+  <body>
+    <div class="timer-container">
+      <h1> таймер</h1>
+      <input
+        type="number"
+        id="timeInput"
+        placeholder="Введите время в секундах"
+      />
+      <button onclick="startTimer()">Старт</button>
+      <div id="timer">00:00</div>
+      <div id="message"></div>
+    </div>
+
+    <audio id="alarmSound" src="/korabelnyiy-gudok.mp3" preload="auto"></audio>
+  </body>
+</html>

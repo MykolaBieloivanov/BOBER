@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  /* min-height: 100vh; */
+  margin: 0;
+  width: 100%;
+}
+
+
+a {
+  color: rgb(5, 5, 5); 
+  text-decoration: none; 
+}
+a:hover {
+  text-decoration: underline; 
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+}
+.header-logo {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-left: 19px;
+  flex-direction: column;
+  font-size: 20px;
+}
+.nav-big-menu {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-big-menu li {
+  margin-right: 15px;
+}
+
+.nav-small-menu {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.all-small-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  font-size: 30px;
+  color: black;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  /* position: relative; */
+  /* padding: 20px ; */
+}
+
+.main-image {
+  background-image: url(./1\ \(2\).jpg);
+  background-size: cover;
+  background-position: center; /* центровка изображения */
+  position: relative;
+  width: 100%;
+  height: 450px;
+  /* filter: brightness(0.67); */
+}
+
+.text-image {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 10px black;
+  font-weight: bold;
+  top: 77%;
+  left: 10%;
+
+  /* filter: brightness(1.0); пытался схитрить */
+}
+.grid-title {
+  font-size: 22px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: start;
+  grid-column: 1 / -1;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.boss-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  background-color: white;
+  justify-content: center;
+}
+
+.son-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  max-width: 312px;
+  max-height: 389px;
+}
+.son-container img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+
+
+.Zum.Seitenanfang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+.grayinfo-in-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  max-width: 200px;
+}
+
+
+/* .footer-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #545454;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 40px;
+  gap: 20px;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  max-width: 200px;
+} */
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Можно использовать flex-start для выравнивания по верхнему краю */
+  padding: 40px 20px; /* Увеличьте отступы для лучшего вида */
+  background-color: #545454; /* Цвет фона футера */
+  color: white; /* Цвет текста в футере */
+  width: 100%;
+  height: auto; /* Позволяет футеру адаптироваться к содержимому */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 200px;
+}
+
+.footer-text {
+  width: 100%;
+  text-align: center; /* Центруем текст */
+  margin-top: 20px; /* Отступ сверху */
+  color: white; /* Цвет текста в футере */
+}
+
+
